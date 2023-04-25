@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Donation Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="donationForm" class="form">
+        <h1>Donation Form</h1>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="familyName">Family Name:</label>
+        <input type="text" id="familyName" name="familyName" required>
+
+        <label for="donationType">Donation Type:</label>
+        <select id="donationType" name="donationType" required>
+            <option value="">-- Select Donation Type --</option>
+            <option value="one-time">One-time</option>
+            <option value="monthly">Monthly</option>
+        </select>
+
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" min="1" required>
+
+        <label for="preferredArea">Preferred Area:</label>
+        <input type="text" id="preferredArea" name="preferredArea" required>
+
+        <button type="submit" id="sendButton">Send</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
